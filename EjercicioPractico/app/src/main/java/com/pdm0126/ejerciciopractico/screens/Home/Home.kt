@@ -47,7 +47,7 @@ fun Home(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-                .background(Color(0xFFEAF4FF))
+                .background(Color.Gray)
         ) {
             PullToRefreshBox(
                 isRefreshing = refresh,

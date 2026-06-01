@@ -7,5 +7,5 @@ sealed class Routes : NavKey {
     @Serializable
     data object  Home : Routes()
     @Serializable
-    data object Detail : Routes()
+    data object MovieList : Routes()
 }

@@ -21,7 +21,7 @@ fun PostCard(post: Post) {
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
-            containerColor = Color.White
+            containerColor = Color.Black
         )
     ) {
         Column(
