@@ -10,7 +10,7 @@ import com.pdm0126.rankeduca.data.database.entities.OptionEntity
 import com.pdm0126.rankeduca.data.database.entities.QuestionEntity
 
 @Database(
-    entities = [QuestionEntity::class,OptionEntity::class],
+    entities = [QuestionEntity::class, OptionEntity::class],
     version = 2,
     exportSchema = false
 )
@@ -21,7 +21,6 @@ abstract class AppDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
-
         fun getDatabase(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 Room.databaseBuilder(
