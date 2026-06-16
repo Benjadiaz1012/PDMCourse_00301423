@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface OptionDao {
 
-    @Query("SELECT * FROM options WHERE questionId = questionId")
+    @Query("SELECT * FROM options WHERE questionId = :questionId")
     fun getOptionsForQuestion(questionId: Int): Flow<List<OptionEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

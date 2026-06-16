@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.map
 class QuestionRepositoryImpl(
     private val questionDao: QuestionDao
 ) : QuestionRepository {
-    override fun getQuesitons(): Flow<List<Question>> {
+    override fun getQuestions(): Flow<List<Question>> {
         return questionDao.getQuestionsWithOptions().map { list ->
             list.map { it.toModel() }
         }
@@ -21,7 +21,7 @@ class QuestionRepositoryImpl(
         questionDao.insertQuestion(QuestionEntity(title = title))
     }
 
-    override suspend fun deleteQuesiton(question: Question) {
+    override suspend fun deleteQuestion(question: Question) {
         questionDao.deleteQuestion(question.toEntity())
     }
 }
