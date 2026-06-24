@@ -1,4 +1,4 @@
-package com.pdm0126.rankeduca.data.repository
+package com.pdm0126.rankeduca.data.repository.OptionRepository
 
 import com.pdm0126.rankeduca.data.model.Option
 import kotlinx.coroutines.flow.Flow

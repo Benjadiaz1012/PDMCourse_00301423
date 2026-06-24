@@ -7,7 +7,7 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.pdm0126.rankeduca.RankedUcaApplication
 import com.pdm0126.rankeduca.data.model.Option
-import com.pdm0126.rankeduca.data.repository.OptionRepository
+import com.pdm0126.rankeduca.data.repository.OptionRepository.OptionRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
